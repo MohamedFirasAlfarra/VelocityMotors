@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Fleet</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="side">
+<div id="brand">Velocity<br />Motors</div>
+<a href="index.html">Home</a>
+<a href="AboutUs.html">About Us</a>
+<a href="Cars.html" class="active">Our Fleet</a>
+</div>
+<div id="page">
+<div class="hero">
+    <h1>Our Fleet</h1>
+    <p>Select one or more cars then click Continue.</p>
+</div>
+<table id="fleet">
+<thead>
+    <tr>
+        <th>Code</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Daily Rate</th>
+        <th>Show Details</th>
+        <th>Select</th>
+    </tr>
+    </thead>
+
+    <tbody>
+<tr><td>BMW-001</td><td><b class="model">BMW 3 Series (Sedan)</b><div class="more"><ol><li>Fuel: Gasoline</li><li>Transmission: Automatic</li><li>Seats: 5</li><li>Mileage: 25000 km</li><li>Color: Black</li><li>Engine: 2.0L Turbo</li></ol></div></td><td>2023</td><td><span class="price">850000</span> SYP</td><td><input type="checkbox" class="chkInfo" title="Details" /></td><td><input type="checkbox" class="chkPick" value="BMW-001" title="Select" /></td></tr>
+<tr><td>BMW-002</td><td><b class="model">BMW X5 (SUV)</b><div class="more"><ol><li>Fuel: Gasoline</li><li>Transmission: Automatic</li><li>Seats: 7</li><li>Mileage: 35000 km</li><li>Color: White</li><li>Engine: 3.0L Twin-Turbo</li></ol></div></td><td>2022</td><td><span class="price">1200000</span> SYP</td><td><input type="checkbox" class="chkInfo" title="Details" /></td><td><input type="checkbox" class="chkPick" value="BMW-002" title="Select" /></td></tr>
+<tr><td>BMW-003</td><td><b class="model">BMW M4 (Sports)</b><div class="more"><ol><li>Fuel: Gasoline</li><li>Transmission: Automatic</li><li>Seats: 4</li><li>Mileage: 15000 km</li><li>Color: Blue</li><li>Engine: 3.0L Twin-Turbo</li></ol></div></td><td>2024</td><td><span class="price">1500000</span> SYP</td><td><input type="checkbox" class="chkInfo" title="Details" /></td><td><input type="checkbox" class="chkPick" value="BMW-003" title="Select" /></td></tr>
+<tr><td>BMW-004</td><td><b class="model">BMW 5 Series (Sedan)</b><div class="more"><ol><li>Fuel: Gasoline</li><li>Transmission: Automatic</li><li>Seats: 5</li><li>Mileage: 42000 km</li><li>Color: Silver</li><li>Engine: 2.0L Turbo</li></ol></div></td><td>2021</td><td><span class="price">950000</span> SYP</td><td><input type="checkbox" class="chkInfo" title="Details" /></td><td><input type="checkbox" class="chkPick" value="BMW-004" title="Select" /></td></tr>
+<tr><td>BMW-005</td><td><b class="model">BMW X3 (SUV)</b><div class="more"><ol><li>Fuel: Gasoline</li><li>Transmission: Automatic</li><li>Seats: 5</li><li>Mileage: 28000 km</li><li>Color: Gray</li><li>Engine: 2.0L Turbo</li></ol></div></td><td>2023</td><td><span class="price">1100000</span> SYP</td><td><input type="checkbox" class="chkInfo" title="Details" /></td><td><input type="checkbox" class="chkPick" value="BMW-005" title="Select" /></td></tr>
+<tr><td>BMW-006</td><td><b class="model">BMW Z4 (Convertible)</b><div class="more"><ol><li>Fuel: Gasoline</li><li>Transmission: Automatic</li><li>Seats: 2</li><li>Mileage: 12000 km</li><li>Color: Red</li><li>Engine: 3.0L Twin-Turbo</li></ol></div></td><td>2024</td><td><span class="price">1300000</span> SYP</td><td><input type="checkbox" class="chkInfo" title="Details" /></td><td><input type="checkbox" class="chkPick" value="BMW-006" title="Select" /></td></tr>
+<tr><td>BMW-007</td><td><b class="model">BMW 7 Series (Luxury)</b><div class="more"><ol><li>Fuel: Gasoline</li><li>Transmission: Automatic</li><li>Seats: 5</li><li>Mileage: 18000 km</li><li>Color: Black</li><li>Engine: 3.0L Twin-Turbo</li></ol></div></td><td>2023</td><td><span class="price">1800000</span> SYP</td><td><input type="checkbox" class="chkInfo" title="Details" /></td><td><input type="checkbox" class="chkPick" value="BMW-007" title="Select" /></td></tr>
+</tbody>
+
+</table>
+<p class="center">
+    <button type="button" id="goBtn">Continue</button>
+     <!-- <span id="pickCount"></span> -->
+    </p>
+
+<form id="reserve" action="#" method="post" class="hidden">
+<fieldset>
+<legend>Reservation Details</legend>
+<div class="grid">
+<div class="fld"><label for="fullName">Full Name</label>
+    <input type="text" id="fullName" maxlength="60" /><span class="msg"></span></div>
+<div class="fld"><label for="nid">National ID *</label>
+    <input type="text" id="nid" maxlength="11" /><span class="msg"></span></div>
+<div class="fld"><label for="from">Rental Start Date *</label>
+    <input type="date" id="from" /><span class="msg"></span></div>
+<div class="fld"><label for="to">Rental End Date *</label>
+    <input type="date" id="to" /><span class="msg"></span></div>
+<div class="fld"><label for="phone">Mobile Number</label><input type="tel" id="phone" maxlength="14" /><span class="msg"></span></div>
+<div class="fld"><label for="mail">Email Address</label>
+    <input type="email" id="mail" /><span class="msg"></span></div>
+</div>
+<p class="center"><button type="submit">Submit</button></p>
+</fieldset>
+</form>
+<div id="summary" class="hidden"></div>
+</div>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="myFunctions.js"></script>
+</body>
+</html>
